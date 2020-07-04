@@ -93,11 +93,11 @@ nav {
           color: #fff;
 
           &::before {
-            content: "ďźź";
+            content: "<";
             margin-right: 10px;
           }
           &::after {
-            content: "ďź";
+            content: ">";
             margin-left: 10px;
           }
         }
