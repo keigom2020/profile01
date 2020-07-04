@@ -1,0 +1,377 @@
+@import "partials/_general.scss";
+
+.inner {
+  @include inner();
+}
+
+.header {
+  text-align: center;
+}
+
+nav {
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        display: block;
+        border-bottom: 2px solid transparent;
+        padding: 10px 20px;
+        font-size: 14px;
+
+        &:hover {
+          border-bottom: 2px solid $black;
+          transition: border-bottom 0.4s;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  .inner {
+    display: flex;
+  }
+}
+
+.mainCont {
+  width: 70%;
+}
+
+.aside {
+  width: 30%;
+  margin-left: 20px;
+
+  ul {
+    li {
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.18);
+
+      h2 {
+        width: 100%;
+        font-size: 14px;
+        border-bottom: 1px solid $black;
+      }
+    }
+    .wpTheme {
+      h2 {
+        background: {
+          color: $black;
+        }
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        padding: 8px 0;
+      }
+      ul {
+        li {
+          @include tag(
+          $bgColor: rgba(0, 0, 0, 0.04)
+          );
+        }
+      }
+    }
+    .profile {
+      .btn {
+        @include btn(
+          gray,
+          160px
+        );
+      }
+      .snsArea {
+        padding: 16px 16px;
+        background: {
+          color: $main-color;
+        }
+        p {
+          margin: 0 0;
+          text-align: center;
+          color: #fff;
+
+          &::before {
+            content: "ďźź";
+            margin-right: 10px;
+          }
+          &::after {
+            content: "ďź";
+            margin-left: 10px;
+          }
+        }
+
+        ul {
+          display: flex;
+          justify-content: center;
+
+          li {
+            margin-right: 8px;
+
+            &:last-child {
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+    }
+
+    input,
+    select {
+      width: 100%;
+    }
+
+    input[type=text] {
+      border-radius: 90px;
+      outline: none;
+    }
+    select {
+      height: 40px;
+    }
+  }
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    width: calc((100% / 2) - 10px);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.18);
+    margin-bottom: 20px;
+
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .cardText {
+      padding: 10px 10px;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      transition: all 0.4s;
+    }
+  }
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+
+  li {
+    border-radius: 50%;
+    background: {
+      color: #fff;
+    }
+    a {
+      border-radius: 50%;
+      color: $black;
+    }
+
+    &.current {
+      background: {
+        color: $black;
+      }
+      color: #fff;
+    }
+  }
+  
+}
+
+// footer
+.footer {
+
+  color: #fff;
+  background: {
+    color: #393542;
+  }
+  position: relative;
+
+  .inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footerMainCont {
+  width: 300px;
+
+  h2 {
+    font-size: 56px;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+.tagLists {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    @include tag();
+  }
+}
+
+.footerCont {
+  margin-left: 45px;
+
+  h3 {
+
+    &::before {
+      content: "";
+      border-left: 4px solid $main-color;
+      margin-right: 10px;
+    }
+  }
+
+  &.popularPost {
+    width: 518px;
+
+    ul {
+      li {
+        position: relative;
+        margin-bottom: 20px;
+
+        .tag {
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 0;
+        }
+        a {
+          display: flex;
+          
+          &:before {
+            content: none;
+          }
+
+          p {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    padding: 0 0;
+    li {
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        display: block;
+        color: #fff;
+        // padding: 10px 0;
+        &:before {
+          content: ">";
+          margin-right: 10px;
+        }
+
+        img {
+          width: 200px;
+        }
+      }
+      
+    }
+  }
+
+}
+
+.btn {
+  @include btn();
+
+  &::before {
+    content: ">";
+  }
+
+  &:hover {
+    opacity: 0.5;
+    transition: all 0.6s;
+  }
+}
+
+.copyRight {
+  border-top: 2px solid #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 12px;
+}
+
+
+
+@media (max-width: 800px) {
+  .main .inner {
+    flex-direction: column;
+  }
+
+  nav {
+    ul {
+      li {
+        a {
+          padding: 0 0;
+        }
+      }
+    }
+  }
+
+  .inner {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .mainCont {
+    width: 100%;
+  }
+
+  .aside {
+    width: 100%;
+    padding: 0 0;
+    margin-left: 0;
+  }
+
+  .cardList {
+    padding: 0 0;
+  }
+
+  // footer
+
+  .footerMainCont {
+    width: 100%;
+  }
+
+  .footerCont {
+    width: 100%;
+    margin-left: 0;
+    h3 {
+      padding-bottom: 12px;
+
+      &::before {
+        border-left: none;
+        margin-right: 0;
+      }
+      border-bottom: 2px solid $main-color;
+    }
+
+    ul {
+      li {
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    &.popularPost {
+      width: 100%;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+}

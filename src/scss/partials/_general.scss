@@ -1,0 +1,188 @@
+@mixin inner(
+  $content-width: 1200px
+  ) {
+  width: $content-width;
+  margin: 0 auto;
+}
+
+// *{
+//   outline: red solid 1px;
+// }
+
+@mixin btn(
+  $background: #e22255,
+  $width: 200px
+) {
+  background: {
+    color: $background;
+  }
+  border-radius: 32px;
+  padding: 8px 12px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: $width;
+}
+
+@mixin tag (
+  $bgColor: rgba(255, 255, 255, 0.25)
+  ) {
+    margin-right: 8px;
+      a {
+        background: {
+          color: $bgColor;
+        }
+        padding: 4px 8px;
+        font-size: 12px;
+        border-radius: 4px;
+  
+        &:before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f099";
+        }
+      }
+}
+
+// * {
+//   background-color: black;
+// }
+
+$main-color: #20b2aa;
+$black: #393542;
+$content-width: 1200px;
+
+body {
+  font-family:"Font Awesome 5 Free","Font Awesome 5 Brands";
+}
+
+.forPc {
+  display: block;
+}
+.forSp {
+  display: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #393542;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.header,
+.footer {
+  width: 100%;
+  min-width: $content-width;
+}
+
+ul {
+  padding: 0 0;
+}
+
+.mainColor {
+  color: $main-color;
+}
+
+.tag {
+  background-color: $main-color;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 32px;
+  font-size: 12px;
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.date {
+  color: gray;
+  font-size: 12px;
+}
+
+.topScroll {
+  border-radius: 50%;
+  background-color: #393542;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: block;
+  width: 54px;
+  height: 54px;
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    transform: 
+      rotate(45deg)
+      // translate(-50%, -50%)
+      ;
+
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 40%;
+    right: 35%;
+  }
+}
+
+
+/*Animation*/
+body {
+  display:  block;                /* ブロック要素にする */
+  margin: 0 auto;                 /* 要素中央揃え */
+  position:  relative;            
+  animation: anime1 0.8s ease;      /* アニメーション指定 */
+}
+@keyframes anime1 {
+  0% {
+      opacity:  0;                
+      top: 25px;                  
+  }
+  100% {
+      opacity:  1;                
+      top: 0;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .forSp {
+    display: block;
+  }
+  .forPc {
+    display: none;
+  }
+
+  .header,
+  .footer {
+    min-width: 100%;
+  }
+  
+}
