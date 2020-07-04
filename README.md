@@ -12,4 +12,9 @@ autoprefixer
 # yarn add -D 
 others
 
+
+npm update minimist
+npm up minimist
+npm upgrade minimist
+
 ```
