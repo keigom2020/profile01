@@ -8,25 +8,6 @@
   text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Kosugi Maru|PT Serif|Big Shoulders Text|Arvo|Gugi|Lato|Roboto|Sofia&display=swap');
-
-:root {
-  --roboto: "Roboto", sans-serif;
-  --gugi: "Gugi", cursive;
-  --sofia: "Sofia", cursive;
-  --big: "Big Shoulders Text", cursive;
-  --PT: "PT Serif", cursive;
-  --Maru: "Kosugi Maru", cursive;
-}
-
-h2 {
-  font-family: var(--PT)!important;
-}
-
-h3 {
-  font-family: var(--roboto)!important;
-}
-
 h5 {
   color: #20b2aa;
 }
@@ -84,19 +65,7 @@ ol,ul {
   height: 100vh;  
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradientBG 7s ease infinite;
-}
-
-@keyframes gradientBG {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
+  // animation: gradientBG 7s ease infinite;
 }
 
 .mvTitle {

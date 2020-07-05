@@ -1,0 +1,30 @@
+/*Animation*/
+body {
+  display:  block;
+  margin: 0 auto;
+  position:  relative;            
+  animation: anime1 0.8s ease;
+}
+
+@keyframes anime1 {
+  0% {
+      opacity:  0;                
+      top: 25px;                  
+  }
+  100% {
+      opacity:  1;                
+      top: 0;
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}

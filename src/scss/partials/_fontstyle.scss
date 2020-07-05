@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi Maru|PT Serif|Big Shoulders Text|Arvo|Gugi|Lato|Roboto|Sofia&display=swap');
+
+:root {
+  --roboto: "Roboto", sans-serif;
+  --gugi: "Gugi", cursive;
+  --sofia: "Sofia", cursive;
+  --big: "Big Shoulders Text", cursive;
+  --PT: "PT Serif", cursive;
+  --Maru: "Kosugi Maru", cursive;
+}
+
+h2 {
+  font-family: var(--PT)!important;
+}
+h3 {
+  font-family: var(--roboto)!important;
+}
