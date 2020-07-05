@@ -1,6 +1,12 @@
 # profile01
 npm-scriptsのタスクランナーを利用した開発環境
 
+## 今後実装したいこと
+- scrollした値によってナビ、トップボタンの出現
+- ハンバーガーメニュー
+- モーダル
+- タブ切替
+
 [http://qlpt.sakura.ne.jp/profile01/index.html](http://qlpt.sakura.ne.jp/profile01/index.html)
 
 # Branche
