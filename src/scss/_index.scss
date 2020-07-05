@@ -1,4 +1,4 @@
-@import "partials/_general.scss";
+@import "partials/*";
 
 .inner {
   @include inner();
@@ -63,25 +63,6 @@ ol,ul {
   font-family: "Font Awesome 5 Brands";
 }
 
-/*scroll-top*/
-.scroll-top {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 100;
-  background-color: #999;
-  opacity: .8;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  color: #fff;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-}
-
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
   padding-left: 30px;
   padding-right: 30px;
@@ -118,7 +99,7 @@ ol,ul {
   }
 }
 
-.mv__title {
+.mvTitle {
   text-align: center;
   font-size: 10rem;
   color: #ffffff;
@@ -131,7 +112,7 @@ ol,ul {
 }
 
 @media (max-width: 768px) {
-  .mv__title {
+  .mvTitle {
     font-size: 4rem;
   }
 }
@@ -315,33 +296,6 @@ p {
   }
 }
 
-.slick-prev {
-  background-color: #20b2aa !important;
-  border-radius: 5px;
-  height: 50% !important;
-  width: 8% !important;
-  opacity: 0.3;
-  z-index: 2;
-
-  &:hover {
-    opacity: 0.7;
-    transition: all 0.5s;
-  }
-}
-
-.slick-next {
-  background-color: #20b2aa !important;
-  border-radius: 10px;
-  height: 50% !important;
-  width: 8% !important;
-  opacity: 0.3;
-
-  &:hover {
-    opacity: 0.7;
-    transition: all 0.5s;
-  }
-}
-
 .bg-light {
   background-color: #f8f9fa!important;
 }
@@ -421,26 +375,8 @@ ul.social-buttons {
   padding-left: 30px;
 }
 
-/*Animation*/
-body {
-  display:  block;
-  margin: 0 auto;
-  position:  relative;
-  animation: anime1 0.8s ease;
-}
-@keyframes anime1 {
-  0% {
-      opacity:  0;
-      top: 15px;
-  }
-  100% {
-      opacity:  1;
-      top: 0;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .mv__title {
+  .mvTitle {
     font-size: 4rem;
     text-align: center;
     color: #ffffff;
@@ -449,24 +385,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-  }
-  
-  /*Animation*/
-  body {
-    display:  block;
-    margin: 0 auto;
-    position:  relative;
-    animation: anime1 0.8s ease;
-  }
-  @keyframes anime1 {
-    0% {
-        opacity:  0;
-        top: 15px;      
-    }
-    100% {
-        opacity:  1;
-        top: 0;         
-    }
   }
 }
 
@@ -644,7 +562,7 @@ body {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .main .inner {
     flex-direction: column;
   }

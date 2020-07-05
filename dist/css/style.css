@@ -869,7 +869,7 @@ ul.social-buttons li a {
   font-size: 12px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .main .inner {
     flex-direction: column;
   }

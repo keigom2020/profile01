@@ -1,0 +1,26 @@
+.slick-prev {
+  background-color: #20b2aa !important;
+  border-radius: 5px;
+  height: 50% !important;
+  width: 8% !important;
+  opacity: 0.3;
+  z-index: 2;
+
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.5s;
+  }
+}
+
+.slick-next {
+  background-color: #20b2aa !important;
+  border-radius: 10px;
+  height: 50% !important;
+  width: 8% !important;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.5s;
+  }
+}
