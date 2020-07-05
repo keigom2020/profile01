@@ -25,6 +25,14 @@
   width: $width;
 }
 
+@mixin indent(
+  $padding-left: 1em,
+  $text-indent: -1em
+) {
+  padding-left: $padding-left;
+  text-indent: $text-indent;
+}
+
 @mixin tag (
   $bgColor: rgba(255, 255, 255, 0.25)
   ) {
@@ -50,6 +58,7 @@
 // }
 
 $main-color: #20b2aa;
+$green-color: #23d5ab;
 $black: #393542;
 $content-width: 1200px;
 
@@ -131,6 +140,8 @@ ul {
   display: block;
   width: 54px;
   height: 54px;
+  cursor: pointer;
+  outline: none;
 
   &:hover {
     opacity: 0.8;

@@ -78,6 +78,8 @@ section:nth-child(2n) {
   background: {
     color: gray;
   }
+  background: linear-gradient($main-color, #fff);
+
 }
 
 .secTitle {
@@ -103,7 +105,12 @@ section:nth-child(2n) {
         // left: 50%;
         // transform: translate(-50%, -50%);
       }
-
+      p {
+        @include indent(
+          5em,
+          -5em
+        );
+      }
       
     }
   }
@@ -119,12 +126,13 @@ section:nth-child(2n) {
 
       li {
         width: calc((100% / 2) - 10px);
+        margin-bottom: 40px;
 
         h3 {
           margin-bottom: 10px;
-          &:before {
+          &:before {                                              
             content: "";
-            border-left: 4px solid blue;
+            border-left: 4px solid $green-color;
             margin-right: 10px;
           }
         }
@@ -249,7 +257,7 @@ ul.social-buttons {
   background: {
     color: #393542;
   }
-  position: relative;
+  // position: relative;
 
   .inner {
     display: flex;
