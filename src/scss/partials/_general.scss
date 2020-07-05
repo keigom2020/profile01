@@ -87,9 +87,15 @@ img {
   min-width: $content-width;
 }
 
+// reset
+h1 {
+  margin: 0 0;
+}
+
 ul {
   padding: 0 0;
 }
+// /reset
 
 .mainColor {
   color: $main-color;
