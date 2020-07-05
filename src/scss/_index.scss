@@ -415,7 +415,26 @@ ul.social-buttons {
   font-size: 12px;
 }
 
+// レスポンシブ
 @media screen and (max-width: 767px) {
+
+  .inner {
+    @include inner(100%);
+  }
+
+  .btn {
+    @include btn(
+      $main-color,
+      200px
+    );
+  }
+
+  .skills .inner ul li {
+    width: 100%;
+  }
+  .cardList li {
+    width: 100%;
+  }
 
   .main .inner {
     flex-direction: column;
@@ -484,6 +503,87 @@ ul.social-buttons {
     }
   }
 }
+
+
+
+
+
+// modal
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+// .content{
+//   margin: 0 auto;
+//   padding: 40px;
+// }
+// .modal{
+//   display: none;
+//   height: 100vh;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 99;
+// }
+// .modal__bg{
+//   background: rgba(0,0,0,0.8);
+//   height: 100vh;
+//   position: absolute;
+//   width: 100%;
+// }
+// .modal__content{
+//   background: #fff;
+//   left: 50%;
+//   padding: 40px;
+//   position: absolute;
+//   top: 50%;
+//   transform: translate(-50%,-50%);
+//   width: 60%;
+//   min-height: 400px;
+
+//   p {
+//     padding-top: 20px;
+//   }
+// }
+
+// .js-modal-close {
+//   display: inline-block;
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     border-top: 2px solid #000;
+//     width: 30px;
+//     height: 2px;
+
+//     transform: rotate(45deg);
+//   }
+//   &::after {
+//     content: "";
+//     border-top: 2px solid #000;
+//     width: 30px;
+//     height: 2px;
+
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     transform: rotate(-45deg);
+//   }
+// }
+
+// .js-modal-close span {
+//   border-top: 2px solid black;
+//   width: 100px;
+// }
+
+// .js-modal-close span:nth-child(2) {
+//   border-top: 2px solid black;
+// }
+
 
 // @media screen and (min-width: 767px) {
 
