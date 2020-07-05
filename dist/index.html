@@ -24,7 +24,7 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="nav forPc">
       <ul class="inner">
         <li>
           <a href="#introduce">Introduce</a>
@@ -37,161 +37,177 @@
         </li>
       </ul>
     </nav>
+    <nav class="nav nav_area_sp forSp">
+      <div class="nav_area_bg"></div>
+      <button type="button" class="nav_buttom">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="/">トップページ</a></li>
+          <li><a href="#care">これひとつで3つの機能</a></li>
+        </ul>
+        </nav>
+    </nav>
   </header>
 
-<section class="mv">
-  <div class="container">
-    <div class="row">
-      <h1 class="mvTitle">PORTFOLIO</h1>          
+<div class="content">
+  <section class="mv">
+    <div class="container">
+      <div class="row">
+        <h1 class="mvTitle">PORTFOLIO</h1>          
+      </div>
     </div>
-  </div>
-</section>
-
-<section class="introduce" id="introduce">
-  <h2 class="secTitle">introduce</h2>
-  <div class="inner">
-    <div class="content">
-      <img src="img/laravel1.png" alt="">
-    </div>
-    <div class="content">
-      <p>
-        出身：東京都
-      </p>
-      <p>
-        学歴：大学 経済学部
-      </p>
-      <p>
-        実務経験：WEB制作受託会社 マークアップエンジニア
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="skills" id="skills">
-  <h2 class="secTitle">skills</h2>
-  <div class="inner">
-    <ul>
-      <li>
-        <h3>HTML, CSS</h3>
-        <a href="">
-          <img src="img/vscode_logo.jpg" alt="">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt ratione ipsum fugiat vel nisi soluta, numquam amet ea dignissimos aut modi, consequatur facere ut sed a provident perferendis quibusdam?
-          </p>
-        </a>
-      </li>
-      <li>
-        <h3>SASS</h3>
-        <a href="">
-          <img src="img/vscode_logo.jpg" alt="">
-          <p>
-            @mixinなどの活用し効率的な設計を行っています。
-          </p>
-        </a>
-      </li>   
-      <li>
-        <h3>Git</h3>
-        <a href="">
-          <p>
-            制作の一連の業務をGitを用いて管理しています。
-          </p>
-        </a>
-      </li>
-      <li>
-        <h3>JavaScript / jQuery</h3>
-        <a href="">
-          <img src="img/vscode_logo.jpg" alt="">
-          <div class="cardText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum veritatis sint rerum ratione molestiae in pariatur accusamus alias, et recusandae asperiores repellendus harum voluptas minima repellat error facere quos.
-          </div>
-        </a>
-      </li>
-      <li>
-        <h3>Gulp, npm-scripts</h3>
-        <a href="">
-          <img src="img/vscode_logo.jpg" alt="">
-          <p>
-            タスクランナーを利用した制作環境を利用。
-          </p>
-        </a>
-      </li>
-      <li>
-        <h3>Visual Studio Code</h3>
-        <a href="">
-          <img src="img/vscode_logo.jpg" alt="">
-          <p>
-            一括置換やGitクライアントとして活用
-          </p>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="portfolio" id="portfolio">
-  <h2 class="secTitle">portfolio</h2>
-  <div class="inner">
-    <ul class="cardList">
-      <li>
-        <img src="img/vscode_logo.jpg" alt="">
-        <div class="cardText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto, perferendis eligendi quia, cupiditate vel obcaecati facilis velit consectetur nisi magni sunt at quis officiis ipsa fugit? Iure, iusto provident.
-        </div>
-        <div class="tagArea">
-          <span class="tag">#HTML / CSS</span>
-          <span class="tag">#JavaScript</span>
-          <span class="tag">#jQuery</span>
-        </div>
-        <a href="" class="btn js-modal-open">詳細を見る</a>
-
-        <!-- <div class="content">
-          <a href="" class="btn js-modal-open">詳細を見る</a>
-        </div> -->
-        <!-- <div class="modal js-modal">
-          <div class="modal__bg js-modal-close"></div>
-          <div class="modal__content">
-            <a class="js-modal-close" href="">
-            </a>
+  </section>
   
+  <section class="introduce" id="introduce">
+    <h2 class="secTitle">introduce</h2>
+    <div class="inner">
+      <div class="content">
+        <img src="img/laravel1.png" alt="">
+      </div>
+      <div class="content">
+        <p>
+          出身：東京都
+        </p>
+        <p>
+          学歴：大学 経済学部
+        </p>
+        <p>
+          実務経験：WEB制作受託会社 マークアップエンジニア
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="skills" id="skills">
+    <h2 class="secTitle">skills</h2>
+    <div class="inner">
+      <ul>
+        <li>
+          <h3>HTML, CSS</h3>
+          <a href="">
+            <img src="img/vscode_logo.jpg" alt="">
             <p>
-            ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt ratione ipsum fugiat vel nisi soluta, numquam amet ea dignissimos aut modi, consequatur facere ut sed a provident perferendis quibusdam?
             </p>
-          </div>
-        </div> -->
-
-
-      </li>
-      <li>
-        <img src="img/sika2cap2.PNG" alt="">
-        <div class="cardText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto, perferendis eligendi quia, cupiditate vel obcaecati facilis velit consectetur nisi magni sunt at quis officiis ipsa fugit? Iure, iusto provident.
-        </div>
-        <a href="" class="btn">詳細を見る</a>
-      </li>
-      <li>
-        <img src="img/sika2cap2.PNG" alt="">
-        <div class="cardText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto, perferendis eligendi quia, cupiditate vel obcaecati facilis velit consectetur nisi magni sunt at quis officiis ipsa fugit? Iure, iusto provident.
-        </div>
-        <a href="" class="btn">詳細を見る</a>
-      </li>
-      <li>
-        <img src="img/sika2cap2.PNG" alt="">
-        <div class="cardText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto, perferendis eligendi quia, cupiditate vel obcaecati facilis velit consectetur nisi magni sunt at quis officiis ipsa fugit? Iure, iusto provident.
-        </div>
-        <a href="" class="btn">詳細を見る</a>
-      </li>
-      <li>
-        <a href="">
+          </a>
+        </li>
+        <li>
+          <h3>SASS</h3>
+          <a href="">
+            <img src="img/vscode_logo.jpg" alt="">
+            <p>
+              @mixinなどの活用し効率的な設計を行っています。
+            </p>
+          </a>
+        </li>   
+        <li>
+          <h3>Git</h3>
+          <a href="">
+            <p>
+              制作の一連の業務をGitを用いて管理しています。
+            </p>
+          </a>
+        </li>
+        <li>
+          <h3>JavaScript / jQuery</h3>
+          <a href="">
+            <img src="img/vscode_logo.jpg" alt="">
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum veritatis sint rerum ratione molestiae in pariatur accusamus alias, et recusandae asperiores repellendus harum voluptas minima repellat error facere quos.
+            </div>
+          </a>
+        </li>
+        <li>
+          <h3>Gulp, npm-scripts</h3>
+          <a href="">
+            <img src="img/vscode_logo.jpg" alt="">
+            <p>
+              タスクランナーを利用した制作環境を利用。
+            </p>
+          </a>
+        </li>
+        <li>
+          <h3>Visual Studio Code</h3>
+          <a href="">
+            <img src="img/vscode_logo.jpg" alt="">
+            <p>
+              一括置換やGitクライアントとして活用
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="portfolio" id="portfolio">
+    <h2 class="secTitle">portfolio</h2>
+    <div class="inner">
+      <ul class="cardList">
+        <li>
+          <img src="img/vscode_logo.jpg" alt="">
           <div class="cardText">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto, perferendis eligendi quia, cupiditate vel obcaecati facilis velit consectetur nisi magni sunt at quis officiis ipsa fugit? Iure, iusto provident.
           </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+          <div class="tagArea">
+            <span class="tag">#HTML / CSS</span>
+            <span class="tag">#JavaScript</span>
+            <span class="tag">#jQuery</span>
+          </div>
+          <a href="" class="btn js-modal-open">詳細を見る</a>
+  
+          <!-- <div class="content">
+            <a href="" class="btn js-modal-open">詳細を見る</a>
+          </div> -->
+          <!-- <div class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+              <a class="js-modal-close" href="">
+              </a>
+    
+              <p>
+              ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。
+              </p>
+            </div>
+          </div> -->
+  
+  
+        </li>
+        <li>
+          <img src="img/sika2cap2.PNG" alt="">
+          <div class="cardText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto, perferendis eligendi quia, cupiditate vel obcaecati facilis velit consectetur nisi magni sunt at quis officiis ipsa fugit? Iure, iusto provident.
+          </div>
+          <a href="" class="btn">詳細を見る</a>
+        </li>
+        <li>
+          <img src="img/sika2cap2.PNG" alt="">
+          <div class="cardText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto, perferendis eligendi quia, cupiditate vel obcaecati facilis velit consectetur nisi magni sunt at quis officiis ipsa fugit? Iure, iusto provident.
+          </div>
+          <a href="" class="btn">詳細を見る</a>
+        </li>
+        <li>
+          <img src="img/sika2cap2.PNG" alt="">
+          <div class="cardText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto, perferendis eligendi quia, cupiditate vel obcaecati facilis velit consectetur nisi magni sunt at quis officiis ipsa fugit? Iure, iusto provident.
+          </div>
+          <a href="" class="btn">詳細を見る</a>
+        </li>
+        <li>
+          <a href="">
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto, perferendis eligendi quia, cupiditate vel obcaecati facilis velit consectetur nisi magni sunt at quis officiis ipsa fugit? Iure, iusto provident.
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
 
 <!-- jQuery -->
 <script src="js/jquery-3.5.1.min.js"></script>
