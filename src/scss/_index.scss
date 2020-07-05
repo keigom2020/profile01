@@ -40,6 +40,37 @@ ol,ul {
   font-family: "Font Awesome 5 Brands";
 }
 
+// nav
+nav {
+  background: linear-gradient($main-color, green);
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      width: calc(100% / 3);
+      border-right: 1px solid #fff;
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+
+        &:hover {
+          color: #fff;
+          background: {
+            color: blue;
+          }
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}
+
 // mainvidual
 .mv {
   position: relative;
@@ -85,8 +116,10 @@ section:nth-child(2n) {
 .secTitle {
   text-align: center;
   padding: 0 0 20px;
+  font-size: 40px;
 }
 
+// introduce
 .introduce {
   .inner {
     display: flex;
@@ -115,7 +148,9 @@ section:nth-child(2n) {
     }
   }
 }
+// /introduce
 
+// skills
 .skills {
   .inner {
     
@@ -125,7 +160,7 @@ section:nth-child(2n) {
       justify-content: space-between;
 
       li {
-        width: calc((100% / 2) - 10px);
+        width: calc((100% / 3) - 10px);
         margin-bottom: 40px;
 
         h3 {
@@ -135,13 +170,21 @@ section:nth-child(2n) {
             border-left: 4px solid $green-color;
             margin-right: 10px;
           }
-        }
+        }      
       }
     }
   }
 }
 
-
+.portfolio {
+  .tagArea {
+    padding: 10px 10px;
+    
+    // .tag {
+    //   @include tag();
+    // }
+  }
+}
 
 // .port_slider {
 //   margin: 0 auto;
@@ -181,7 +224,7 @@ ul.social-buttons {
     height: 50px;
     line-height: 50px;
     outline: 0;
-    transition: all .3s;
+    transition: all 0.3s;
     width: 50px;
   }
 }
@@ -208,6 +251,7 @@ ul.social-buttons {
     width: calc((100% / 2) - 10px);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.18);
     margin-bottom: 20px;
+    padding-bottom: 20px;
 
     position: relative;
 
@@ -219,10 +263,10 @@ ul.social-buttons {
       padding: 10px 10px;
     }
 
-    &:hover {
-      transform: translateY(-4px);
-      transition: all 0.4s;
-    }
+    // &:hover {
+    //   transform: translateY(-4px);
+    //   transition: all 0.4s;
+    // }
   }
 }
 
@@ -377,15 +421,15 @@ ul.social-buttons {
     flex-direction: column;
   }
 
-  nav {
-    ul {
-      li {
-        a {
-          padding: 0 0;
-        }
-      }
-    }
-  }
+  // nav {
+  //   ul {
+  //     li {
+  //       a {
+  //         padding: 0 0;
+  //       }
+  //     }
+  //   }
+  // }
 
   .inner {
     width: 100%;
