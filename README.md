@@ -2,10 +2,10 @@
 npm-scriptsのタスクランナーを利用した開発環境
 
 ## 今後実装したいこと
-- scrollした値によってナビ、トップボタンの出現
-- ハンバーガーメニュー
 - モーダル
 - タブ切替
+- scssで画像番号ごとにfadeinさせるタイミングを設定するtiming-function
+- vueでコンポーネントを実装
 
 [http://qlpt.sakura.ne.jp/profile01/index.html](http://qlpt.sakura.ne.jp/profile01/index.html)
 
