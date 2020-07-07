@@ -160,7 +160,7 @@ section:nth-child(2n) {
       justify-content: space-between;
 
       li {
-        width: calc((100% / 3) - 10px);
+        width: calc((100% / 3) - 20px);
         margin-bottom: 40px;
 
         h3 {
@@ -248,9 +248,9 @@ ul.social-buttons {
   justify-content: space-between;
 
   li {
-    width: calc((100% / 2) - 10px);
+    width: calc((100% / 2) - 20px);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.18);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding-bottom: 20px;
 
     position: relative;
